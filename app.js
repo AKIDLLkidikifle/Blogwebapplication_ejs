@@ -5,7 +5,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 
-mongoose.connect("mongodb+srv://blog-withupload:1234321@cluster0.hbkdpsr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.hbkdpsr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 const app = express();
 app.set("view engine", "ejs");
