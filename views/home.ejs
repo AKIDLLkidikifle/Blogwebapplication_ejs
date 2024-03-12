@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+  <div class="container">
+    <h1>Home</h1>
+    <p><%= homecontent %></p>
+    <% x.forEach(function(element){ %>
+        <h1><%= element.header %></h1>
+        <img src="<%= element.picture %>">
+        <p><%= element.content.slice(0,100) %>...<a href="/postes/<%= element.header %>">ReadMore</a></p>
+    <% }) %>
+  </div>
+<%- include("partials/footer") %>
